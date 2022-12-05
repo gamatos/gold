@@ -109,10 +109,10 @@ At any point, the user can type `help` to see a summary of all available command
 
 * `informant` - shows currently selected and available informants
 * `informant 'x'` - changes informant to `x`. There are currently four available informants hard-coded into the application:
-    * `even1s` - informant for language composed of words that have even number of ones $\{w \in \Sigma^*:$ w has an even number of ones $\}$.
+    * `even1s` - informant for language composed of words that have even number of ones $\\{w \in \Sigma^*:$ w has an even number of ones $\\}$.
     * `random` - simply outputs a randomly generated sequence of 32-bit words. A priori not associated with any regular language.
-    * `ex_pattern 'p'` - informant for language that accepts words containing $p$ ie. $\{w \in \Sigma^*:\exists \; u, v \in \Sigma^*$ such that $w = upv\}$.
-    * `rep_pattern 'p'` - informant for language that accepts words constructed by repeating sequence $p$, ie. $\{w \in \Sigma^*:w = p^n,n \in \mathbb{N}\}$.
+    * `ex_pattern 'p'` - informant for language that accepts words containing $p$ ie. $\\{w \in \Sigma^*:\exists \; u, v \in \Sigma^*$ such that $w = upv\\}$.
+    * `rep_pattern 'p'` - informant for language that accepts words constructed by repeating sequence $p$, ie. $\\{w \in \Sigma^*:w = p^n,n \in \mathbb{N}\\}$.
 * `informant save 'filename'` - saves data from current informant to the designated file, up to `max_words` elements.
 * `informant load 'filename'` - creates informant from data in designated file.
 * `print` - Prints current informant data to console. Note that the informant is only printed up until `max_words` elements.
