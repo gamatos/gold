@@ -19,7 +19,7 @@ DFAreisenumAux_0::DFAreisenumAux_0(int state_nr, int symbol_nr) :
 {
 	if (state_nr <= 1)
 	{
-		throw new std::exception("Number of states must be greater than or equal to 1.");
+		throw new std::runtime_error("Number of states must be greater than or equal to 1.");
 	}
 	flags.reserve(state_nr);
 	for (int i = 1; i < state_nr; i++)

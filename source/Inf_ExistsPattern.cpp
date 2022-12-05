@@ -1,5 +1,6 @@
 #include "Inf_ExistsPattern.h"
 #include <algorithm>
+#include <cmath>
 
 Inf_ExistsPattern::Inf_ExistsPattern(int pattern, int s) :
 	vec(),
@@ -14,7 +15,7 @@ Inf_ExistsPattern::Inf_ExistsPattern(int pattern, int s) :
 		++ss;
 	vec.push_back(std::vector<int>());
 	acc.push_back(s ? 0 : 1);
-	int mask = pow(2, s) - 1;
+	int mask = std::pow(2, s) - 1;
 	while (true)
 	{
 		if (j & k)

@@ -13,7 +13,7 @@ class DFAexhaustenumAux_0 : public DFAenumerator_0
 		DFAexhaustenumAux_0(int state_nr);
 		DFAexhaustenumAux_0(const DFAexhaustenumAux_0 & copy);
 
-		DFAexhaustenumAux_0& operator=(const DFAexhaustenumAux_0 & rhs);
+		DFAexhaustenumAux_0 operator=(const DFAexhaustenumAux_0 & rhs);
 
 		DFA_0 getCur() const;
 		const DFAexhaustenumAux_0& next();

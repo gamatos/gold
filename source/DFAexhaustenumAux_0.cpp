@@ -18,7 +18,7 @@ DFAexhaustenumAux_0::DFAexhaustenumAux_0(const DFAexhaustenumAux_0 & copy) :
 {
 }
 
-DFAexhaustenumAux_0 & DFAexhaustenumAux_0::operator=(const DFAexhaustenumAux_0 & rhs)
+DFAexhaustenumAux_0 DFAexhaustenumAux_0::operator=(const DFAexhaustenumAux_0 & rhs)
 {
 	return DFAexhaustenumAux_0(rhs);
 }

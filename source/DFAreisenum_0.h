@@ -19,7 +19,7 @@ public:
 
 	bool isLast();
 
-	void DFAreisenum_0::reset();
+	void reset();
 	std::string name() { return "reis"; };
 	void setMaxStates(int m);
 private:

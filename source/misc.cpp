@@ -1,5 +1,5 @@
 #include <vector>
-#include <exception>
+#include <stdexcept>
 #include "misc.h"
 
 std::vector<int> strtobin(std::string s)
@@ -17,7 +17,7 @@ std::vector<int> strtobin(std::string s)
 		}
 		else
 		{
-			throw std::exception("String does not contain binary number.");
+			throw std::runtime_error("String does not contain binary number.");
 		}
 	}
 }

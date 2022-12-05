@@ -24,7 +24,7 @@ DFArenderer::DFArenderer(DFA d, GVC_t* gvc)
 	for (int i = 0; i < nr_of_nodes; i++)
 	{
 		char c[8];
-		sprintf_s(c, "%d", i);
+		snprintf(c, 8, "%d", i);
 		Agnode_t* node = agnode(graph, c, 1);
 		nodes.push_back(node);
 	}
@@ -38,8 +38,8 @@ DFArenderer::DFArenderer(DFA d, GVC_t* gvc)
 			int target = transitions[i][j];
 			char elabel[8];
 			char ename[32];
-			sprintf_s(elabel, "%d", j);
-			sprintf_s(ename,"edge_%d_%d", i, j);
+			snprintf(elabel, 8, "%d", j);
+			snprintf(ename, 32, "edge_%d_%d", i, j);
 			Agedge_t* edge = agedge(graph, nodes[i], nodes[target], ename, 1);
 			agset(edge, "label", elabel);
 			edges.push_back(edge);

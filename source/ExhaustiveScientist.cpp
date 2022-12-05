@@ -31,7 +31,7 @@ DFA ExhaustiveScientist::identify(InformantEnum* const informant, const int time
 		guess = e->getCur();
 		accept = true;
 	}
-	throw std::exception("No automata found. Try increasing number of states.");
+	throw std::runtime_error("No automata found. Try increasing number of states.");
 }
 
 ExhaustiveScientist::~ExhaustiveScientist()

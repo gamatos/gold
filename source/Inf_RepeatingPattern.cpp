@@ -1,5 +1,6 @@
 #include "Inf_RepeatingPattern.h"
 #include <algorithm>
+#include <cmath>
 
 Inf_RepeatingPattern::Inf_RepeatingPattern(int pattern, int s) :
 vec(),
@@ -12,7 +13,7 @@ acc()
 	int ss = s + 2;
 	if (s == 0)
 		++ss;
-	int mask = pow(2, s) - 1;
+	int mask = std::pow(2, s) - 1;
 	vec.push_back(std::vector<int>());
 	acc.push_back(1);
 	while (true)
