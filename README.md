@@ -3,7 +3,7 @@
 
 ## Description
 
-GOLD is a C++ application which serves as a proof of concept for learning languages [1]. Here, we consider [regular languages](https://en.wikipedia.org/wiki/Regular_language) as represented by [deterministic finite automata (DFA)](https://en.wikipedia.org/wiki/Deterministic_finite_automaton). The source of data is modeled by the concept of an _informant_, while the learner is modeled by that of a _scientist_. The informant supplies words (strings of zeros and ones) which belong or do not belong to the language. The aim is to find the DFA with the least number of states that corresponds to the language the data is drawn from.
+GOLD is a C++ application which serves as a proof of concept program to model language learning [1]. Here, we consider [regular languages](https://en.wikipedia.org/wiki/Regular_language) as represented by [deterministic finite automata (DFA)](https://en.wikipedia.org/wiki/Deterministic_finite_automaton). The source of data is modeled by the concept of an _informant_, while the learner is modeled by that of a _scientist_. The informant supplies words (strings of zeros and ones) which belong or do not belong to the language. The aim is to find the DFA with the least number of states that corresponds to the language the data is drawn from.
 
 This application was first developed in the context of a BSc project supervised by [Dr. José Felix Costa](https://cfcul.ciencias.ulisboa.pt/equipa/jose-felix-costa/).
 
@@ -111,7 +111,7 @@ At any point, the user can type `help` to see a summary of all available command
 * `informant 'x'` - changes informant to `x`. There are currently four available informants hard-coded into the application:
     * `even1s` - informant for language composed of words that have even number of ones $\\{w \in \Sigma^*:$ w has an even number of ones $\\}$.
     * `random` - simply outputs a randomly generated sequence of 32-bit words. A priori not associated with any regular language.
-    * `ex_pattern 'p'` - informant for language that accepts words containing $p$ ie. $\\{w \in \Sigma^*:\exists \; u, v \in \Sigma^*$ such that $w = upv\\}$.
+    * `ex_pattern 'p'` - informant for language that accepts words containing $p$ ie. $\\{w \in \Sigma^* \: \exists \\; u, v \in \Sigma^*$ such that $w = upv\\}$.
     * `rep_pattern 'p'` - informant for language that accepts words constructed by repeating sequence $p$, ie. $\\{w \in \Sigma^*:w = p^n,n \in \mathbb{N}\\}$.
 * `informant save 'filename'` - saves data from current informant to the designated file, up to `max_words` elements.
 * `informant load 'filename'` - creates informant from data in designated file.
