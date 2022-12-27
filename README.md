@@ -12,7 +12,7 @@ This application was first developed in the context of a BSc project supervised 
 A typical usage pattern is as follows:
 
 1. Select an informant using `informant 'x'` or `informant load filename.txt` (see [Informant-related commands](#informant-related-commands)). 
-    * _(Optional)_ Select an enumeration using `enum 'x'` (see [Enumeration related commands](#enumeration-related-commands)
+    * _(Optional)_ Select an enumeration using `enum 'x'` (see [Enumeration related commands](#enumeration-related-commands))
     * _(Optional)_ Select maximum number of states using `max_states 'n'`
     * _(Optional)_ Select maximum number of tested words using `max_words 'n'`
 5. Run the identification algorithm using `identify`
